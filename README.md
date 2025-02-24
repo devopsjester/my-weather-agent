@@ -37,6 +37,27 @@ weather current  # Shows weather for your current location
 weather current --zipcode 90210  # Shows weather for a specific ZIP code
 ```
 
+## Development
+
+### Running Tests
+```bash
+python -m pytest tests/
+```
+
+### Creating a Release
+To create a new release:
+
+1. Update the version in `weather_cli/__init__.py`
+2. Create and push a new tag:
+   ```bash
+   git tag v0.1.0
+   git push origin v0.1.0
+   ```
+
+The GitHub Actions workflow will automatically:
+- Create a GitHub release
+- Build and publish the package to GitHub Packages
+
 ## APIs Used
 
 - Location lookup: zippopotam.us (free, no API key required)
