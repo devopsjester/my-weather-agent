@@ -1,3 +1,6 @@
 click
 requests
 geocoder
+pytest
+pytest-mock
+responses # For mocking HTTP requests
