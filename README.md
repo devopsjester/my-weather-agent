@@ -7,14 +7,14 @@ A simple command-line weather application that shows current weather conditions 
 1. Clone the repository
 2. Create a virtual environment:
    ```bash
-   python -m venv venv
+   python3 -m venv venv
    source venv/bin/activate  # On Unix/macOS
    # or
    .\venv\Scripts\activate  # On Windows
    ```
 3. Install the package:
    ```bash
-   pip install -e .
+   python3 -m pip install -e .
    ```
 
 ## Usage
